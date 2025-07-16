@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f4f7, #e0eafc);
+  padding: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  padding: 10px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 10px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+#search {
+  margin: 10px 0 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.top-bar {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 20px;
+}
+
+#export-btn {
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#export-btn:hover {
+  background-color: #138496;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.time {
+  font-family: monospace;
+}
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input, form select, form button {
+    width: 100%;
+  }
+}

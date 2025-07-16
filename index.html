@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Employee Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <body>
+  <div class="top-bar">
+    <div class="company-name">prodigy infotech Employee Management System</div>
+    <div class="time" id="current-time">--:--:--</div>
+  </div>
+  <div class="actions">
+  <button id="export-btn">Export as CSV</button>
+</div>
+  <div class="container">
+    <h1>Employee Management System</h1>   
+    <form id="employee-form">
+      <input type="text" id="name" placeholder="Employee Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <select id="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" id="position" placeholder="Position" required />
+      <button type="submit">Add</button>
+    </form>
+    <input type="text" id="search" placeholder="Search by name or position..." />
+    <h2>Total Employees: <span id="total-count">0</span></h2>
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Position</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="employee-list">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
